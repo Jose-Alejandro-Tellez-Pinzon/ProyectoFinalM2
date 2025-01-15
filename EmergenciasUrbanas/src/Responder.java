@@ -4,5 +4,6 @@ public interface Responder {
     public String atenderEmergencia() {
         return this.emergencia;
 
+        return sun.text.resources 
   }
 }
