@@ -1,7 +1,18 @@
 package UnidadesDeEmergencia;
 
-public class Ambulancia {
-;
+public class Ambulancia implements Responder{
+
+    @Override
+    public void atenderEmergencia() {
+        System.out.println("");
+
+    }
+    @Override
+    public void evaluarEscado() {
+        System.out.println("");
+
+    }
+
     private int id;
     private String estado;
     private String tipoUnidad;
