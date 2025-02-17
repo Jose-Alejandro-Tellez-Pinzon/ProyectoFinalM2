@@ -1,17 +1,8 @@
 package UnidadesDeEmergencia;
 
-public class Bomberos implements Responder{
+public class Bomberos{
 
-    @Override
-    public void atenderEmergencia() {
-        System.out.println("");
-
-    }
-    @Override
-    public void evaluarEscado() {
-        System.out.println("");
-
-    }
+    
 
     private String estado;
     private String tipoUnidad;
