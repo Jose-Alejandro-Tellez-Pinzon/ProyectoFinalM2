@@ -1,7 +1,7 @@
 package UnidadesDeEmergencia;
 
 public class Ambulancia {
-    ;
+;
     private int id;
     private boolean estado;
     private String tipoUnidad;

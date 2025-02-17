@@ -1,6 +1,8 @@
 package UnidadesDeEmergencia;
 
-public class Bomberos {
+public class Bomberos{
+
+    
 
     private int id;
     private boolean estado;

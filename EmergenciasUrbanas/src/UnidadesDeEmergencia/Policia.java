@@ -2,6 +2,8 @@ package UnidadesDeEmergencia;
 
 public class Policia {
 
+  
+
     private int id;
     private boolean estado;
     private String tipoUnidad;
