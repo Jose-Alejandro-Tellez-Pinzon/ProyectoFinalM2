@@ -2,11 +2,44 @@ package UnidadesDeEmergencia;
 
 public class Policia {
 
-    private String estado;
+    private int id;
+    private boolean estado;
     private String tipoUnidad;
-    private int matricula; 
     private String armamentoAsignado;
     private int cantidadDeArmasAsignadas;
+
+    public Policia(int id, boolean estado, String tipoUnidad, String armamentoAsignado, int cantidadDeArmasAsignadas) {
+        this.id = id;
+        this.estado = estado;
+        this.tipoUnidad = tipoUnidad;
+        this.armamentoAsignado = armamentoAsignado;
+        this.cantidadDeArmasAsignadas = cantidadDeArmasAsignadas;
+
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public String getTipoUnidad() {
+        return tipoUnidad;
+    }
+
+    public void setTipoUnidad(String tipoUnidad) {
+        this.tipoUnidad = tipoUnidad;
+    }
 
     public String getArmamentoAsignado() {
         return armamentoAsignado;
@@ -22,24 +55,6 @@ public class Policia {
 
     public void setCantidadDeArmasAsignadas(int cantidadDeArmasAsignadas) {
         this.cantidadDeArmasAsignadas = cantidadDeArmasAsignadas;
-    }
-
-    public Policia (String estado, String tipoUnidad, int matricula) {
-        this.estado = estado;
-        this.tipoUnidad = tipoUnidad;
-        this.matricula = matricula;
-  }
-
-      public String responderLlamado() {
-        return "La unidad " + tipoUnidad + " está respondiendo al llamado.";
-    }
-
-    public String getdisponible (String enPatrullaje) {
-        return this.estado = enPatrullaje;
-    }
-
-    public int getMatricula () {
-        return this.matricula;
     }
 
 }
