@@ -1,63 +1,81 @@
 package UnidadesDeEmergencia;
 
-public class Ambulancia{
-
-   
-
+public class Ambulancia {
+;
     private int id;
-    private String estado;
+    private boolean estado;
     private String tipoUnidad;
-    private int matricula; 
     private String equipoMedico;
-    private int capacidadDePacientes;
-    private String funcionamientoDelSistemaDeEmergencia;
+    private boolean funcionamientoDelSistemaDeEmergencia;
+    private int combustible;
 
-    public String getEquipoMedico() {
-        return equipoMedico;
+    public Ambulancia() {
+
+        id = 285693;
+        estado = true;
+        tipoUnidad = "Ambulancia";
+        equipoMedico = "Desfibrilador, Botiquin, Camilla";
+        funcionamientoDelSistemaDeEmergencia = true;
+        combustible = 80;
     }
 
-    public void setEquipoMedico(String equipoMedico) {
-        this.equipoMedico = equipoMedico;
-    }
-
-    public int getCapacidadDePacientes() {
-        return capacidadDePacientes;
-    }
-
-    public void setCapacidadDePacientes(int capacidadDePacientes) {
-        this.capacidadDePacientes = capacidadDePacientes;
-    }
-
-    public String getFuncionamientoDelSistemaDeEmergencia() {
-        return funcionamientoDelSistemaDeEmergencia;
-    }
-
-    public void setFuncionamientoDelSistemaDeEmergencia(String funcionamientoDelSistemaDeEmergencia) {
+    public Ambulancia(boolean estado, boolean funcionamientoDelSistemaDeEmergencia) {
+        this.estado = estado;
         this.funcionamientoDelSistemaDeEmergencia = funcionamientoDelSistemaDeEmergencia;
     }
 
-    public Ambulancia (int id,String estado, String tipoUnidad, int matricula) {
-        this.id = id;
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
         this.estado = estado;
-        this.tipoUnidad = tipoUnidad;
-        this.matricula = matricula;
     }
 
-    public String responderLlamado() {
-        return "Unidad " + id + " está respondiendo al llamado.";
+    public boolean isFuncionamientoDelSistemaDeEmergencia() {
+        return funcionamientoDelSistemaDeEmergencia;
     }
 
-    public String getactualizarEstado (String nuevoEstado) {
-        return this.estado = nuevoEstado;
+    public void setFuncionamientoDelSistemaDeEmergencia(boolean funcionamientoDelSistemaDeEmergencia) {
+        this.funcionamientoDelSistemaDeEmergencia = funcionamientoDelSistemaDeEmergencia;
     }
 
-    public String getasignarEmergencia () {
-        return "Se asigno la emergencia a la unidad" + tipoUnidad;
+
+
+    
+
+    public void combustibleRestante(int resta) {
+       
+        combustible = combustible - resta;
     }
 
-    public int getMatricula () {
-        return this.matricula;
+
+    public void Funcionamiento(){
+
+        if (estado == true) {
+            System.out.println("La ambulancia esta en servicio");
+        } else {
+            System.out.println("La ambulancia no esta en servicio");
+        }
+
     }
+
+
+    public void volverEstado(boolean estado) {
+        if (estado == false) {
+            System.out.println("La ambulancia no esta en servicio");
+        } else {
+            System.out.println("La ambulancia esta en servicio");
+        }
+    }
+
+
+    @Override
+    public String toString() {
+        return "Ambulancia [Id: " + id + ", Estado: " + estado + ", Tipo unidad: " + tipoUnidad + ", Equipo medico: "
+                + equipoMedico + ", Funcionamiento del sistema de emergencia: " + funcionamientoDelSistemaDeEmergencia
+                + ", combustible: " + combustible + " estado: " + estado + "]";
+    }
+
 
 }
-

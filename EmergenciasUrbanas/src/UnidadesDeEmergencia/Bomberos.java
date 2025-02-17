@@ -4,13 +4,59 @@ public class Bomberos{
 
     
 
-    private String estado;
+    private int id;
+    private boolean estado;
     private String tipoUnidad;
-    private int matricula; 
     private int capacidadDelTanqueDeAgua;
     private String equipamiento;
-    private String sistemaDeBombeo;
+    private int combustible;
+   
+
     
+
+    public Bomberos() {
+        id = 946572;
+        estado = true;
+        tipoUnidad = "Bomberos";
+        capacidadDelTanqueDeAgua = 15000;
+        equipamiento = "Mangueras, Hacha, Casco, Botas";
+        combustible = 4000;
+    }
+
+
+
+    public Bomberos(boolean estado, int capacidadDelTanqueDeAgua, int combustible) {
+        this.estado = estado;
+        this.capacidadDelTanqueDeAgua = capacidadDelTanqueDeAgua;
+        this.combustible = combustible;
+    }
+
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public String getTipoUnidad() {
+        return tipoUnidad;
+    }
+
+    public void setTipoUnidad(String tipoUnidad) {
+        this.tipoUnidad = tipoUnidad;
+    }
+
     public int getCapacidadDelTanqueDeAgua() {
         return capacidadDelTanqueDeAgua;
     }
@@ -27,29 +73,8 @@ public class Bomberos{
         this.equipamiento = equipamiento;
     }
 
-    public String getSistemaDeBombeo() {
-        return sistemaDeBombeo;
+    public int getCombustible() {
+        return combustible;
     }
 
-    public void setSistemaDeBombeo(String sistemaDeBombeo) {
-        this.sistemaDeBombeo = sistemaDeBombeo;
-    }
-
-    public Bomberos (String estado, String tipoUnidad, int matricula) {
-        this.estado = estado;
-        this.tipoUnidad = tipoUnidad;
-        this.matricula = matricula;
-    }
-
-    public String responderLlamado() {
-        return "La Unidad " + tipoUnidad + " está respondiendo al llamado.";
-    }
-
-    public String getasignarEmergencia (String unidadDisponible) {
-        return this.estado = unidadDisponible;
-    }
-
-    public int getMatricula () {
-        return this.matricula;
-    }
 }
