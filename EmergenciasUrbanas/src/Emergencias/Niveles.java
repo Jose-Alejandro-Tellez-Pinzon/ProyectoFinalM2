@@ -1,6 +1,6 @@
 package Emergencias;
 
-public enum Gravedad {
+public enum Niveles {
 
     BAJA, MEDIA, ALTA;
 
