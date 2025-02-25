@@ -1,4 +1,6 @@
-package Emergencias;
+package model;
+
+import utils.Niveles;
 
 public abstract class Emergencia {
 
@@ -83,6 +85,27 @@ public abstract class Emergencia {
 
     public void setTiempoFinAtencion(long tiempoFinAtencion) {
         this.tiempoFinAtencion = tiempoFinAtencion;
+    }
+
+    public void iniciarAtencion() {
+        this.tiempoInicioAtencion = System.currentTimeMillis();
+    }
+
+    public void finalizarAtencion() {
+        this.tiempoFinAtencion = System.currentTimeMillis();
+        this.atendida = true;
+    }
+
+    public long calcularTiempoAtencion() {
+        return (tiempoFinAtencion - tiempoInicioAtencion);
+    }
+
+    public String getDescripcion() {
+        return String.format("%s en %s (gravedad: %s)", tipoEmergencia, ubicacion, nivelDeGravedad);
+    }
+
+    public String toString() {
+        return getDescripcion() + "tiempo estimado de respuesta: " + tiempoDeRespuesta + " minutos";
     }
 
 }

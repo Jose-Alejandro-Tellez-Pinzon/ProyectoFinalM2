@@ -1,4 +1,4 @@
-package Ejecutar;
+package view;
 
 
 public class App {
