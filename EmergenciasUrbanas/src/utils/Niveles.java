@@ -1,4 +1,4 @@
-package Emergencias;
+package utils;
 
 public enum Niveles {
 
