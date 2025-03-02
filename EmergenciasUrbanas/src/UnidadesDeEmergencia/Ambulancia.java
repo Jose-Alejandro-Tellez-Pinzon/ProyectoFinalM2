@@ -1,6 +1,6 @@
 package UnidadesDeEmergencia;
 
-public class Ambulancia {
+public class Ambulancia implements Responder {
     ;
     private int id;
     private boolean estado;
@@ -22,6 +22,16 @@ public class Ambulancia {
     public Ambulancia(boolean estado, boolean funcionamientoDelSistemaDeEmergencia) {
         this.estado = estado;
         this.funcionamientoDelSistemaDeEmergencia = funcionamientoDelSistemaDeEmergencia;
+    }
+
+    @Override
+    public void atenderEmergencia() {
+        System.out.println("La ambulancia está atendiendo una emergencia médica.");
+    }
+
+    @Override
+    public void evaluarEstado() {
+        System.out.println("Evaluando estado de los heridos y brindando atención médica.");
     }
 
     public boolean isEstado() {

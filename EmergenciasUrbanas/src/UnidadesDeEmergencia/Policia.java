@@ -1,6 +1,6 @@
 package UnidadesDeEmergencia;
 
-public class Policia {
+public class Policia implements Responder{
 
     private int id;
     private boolean estado;
@@ -15,6 +15,16 @@ public class Policia {
         this.armamentoAsignado = armamentoAsignado;
         this.cantidadDeArmasAsignadas = cantidadDeArmasAsignadas;
 
+    }
+
+    @Override
+    public void atenderEmergencia() {
+        System.out.println("La policía está respondiendo a una emergencia de seguridad.");
+    }
+
+    @Override
+    public void evaluarEstado() {
+        System.out.println("Evaluando la seguridad de la zona y situación del incidente.");
     }
 
     public int getId() {

@@ -1,6 +1,6 @@
 package UnidadesDeEmergencia;
 
-public class Bomberos {
+public class Bomberos implements Responder{
 
     private int id;
     private boolean estado;
@@ -27,6 +27,16 @@ public class Bomberos {
         this.estado = estado;
         this.capacidadDelTanqueDeAgua = capacidadDelTanqueDeAgua;
         this.combustible = combustible;
+    }
+
+    @Override
+    public void atenderEmergencia() {
+        System.out.println("Los bomberos están apagando un incendio.");
+    }
+
+    @Override
+    public void evaluarEstado() {
+        System.out.println("Evaluando daños y propagación del incendio.");
     }
 
 
