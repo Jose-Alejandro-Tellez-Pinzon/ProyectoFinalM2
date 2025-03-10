@@ -7,4 +7,14 @@ public class Robo extends Emergencia{
         //TODO Auto-generated constructor stub
     }
 
+    @Override
+        public String toString() {
+            return "Robo{" +
+                    "ubicacion='" + getUbicacion() + '\'' +
+                    ", tipo='" + getTipoEmergencia() + '\'' +
+                    ", gravedad=" + getNivelDeGravedad() +
+                    ", tiempoDeRespuesta=" + getTiempoDeRespuesta() +
+                    '}';
+    }
+
 }

@@ -7,6 +7,16 @@ public class AccidenteVehicular  extends Emergencia{
         super(ubicacion, tipoEmergencia, nivelDeGravedad, tiempoDeRespuesta);
         //TODO Auto-generated constructor stub
     }
+
+    @Override
+        public String toString() {
+            return "AccidenteVehicular{" +
+                    "ubicacion='" + getUbicacion() + '\'' +
+                    ", tipo='" + getTipoEmergencia() + '\'' +
+                    ", gravedad=" + getNivelDeGravedad() +
+                    ", tiempoDeRespuesta=" + getTiempoDeRespuesta() +
+                    '}';
+    }
     
 
 }

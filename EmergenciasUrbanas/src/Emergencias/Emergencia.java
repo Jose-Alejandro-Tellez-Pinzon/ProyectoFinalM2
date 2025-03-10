@@ -32,8 +32,15 @@ public class Emergencia {
 
     @Override
     public String toString() {
-        return "Emergencia [ubicacion=" + ubicacion + ", tipoEmergencia=" + tipoEmergencia + ", nivelDeGravedad="
-                + nivelDeGravedad + ", tiempoDeRespuesta=" + tiempoDeRespuesta + "]";
+
+        return "Emergencia{" +
+                "ubicacion='" + ubicacion + '\'' +
+                ", tipo='" + tipoEmergencia + '\'' +
+                ", gravedad=" + nivelDeGravedad +
+                ", tiempoDeRespuesta=" + tiempoDeRespuesta +
+                '}';
+     //   return "Emergencia [ubicacion=" + ubicacion + ", tipoEmergencia=" + tipoEmergencia + ", nivelDeGravedad="
+       //         + nivelDeGravedad + ", tiempoDeRespuesta=" + tiempoDeRespuesta + "]";
     }
 
 

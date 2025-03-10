@@ -85,4 +85,16 @@ public class Bomberos implements Responder{
         return combustible;
     }
 
+    @Override
+    public String toString() {
+        return "Bomberos{" +
+        "id=" + id +
+        ", estado=" + estado +
+        ", tipoUnidad='" + tipoUnidad + '\'' +
+        ", capacidadDelTanqueDeAgua=" + capacidadDelTanqueDeAgua +
+        ", equipamiento='" + equipamiento + '\'' +
+        ", combustible=" + combustible +
+        '}';
+    }
+
 }
