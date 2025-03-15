@@ -1,5 +1,7 @@
 package Emergencias;
 
+import utils.Gravedad;
+
 public class Emergencia {
 
     private String ubicacion;

@@ -1,5 +1,7 @@
 package Emergencias;
 
+import utils.Gravedad;
+
 public class Robo extends Emergencia{
 
     public Robo(String ubicacion, String tipoEmergencia, Gravedad nivelDeGravedad, int tiempoDeRespuesta) {

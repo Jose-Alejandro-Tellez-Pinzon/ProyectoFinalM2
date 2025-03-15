@@ -1,5 +1,7 @@
 package Emergencias;
 
+import utils.Gravedad;
+
 public class AccidenteVehicular  extends Emergencia{
 
     public AccidenteVehicular(String ubicacion, String tipoEmergencia, Gravedad nivelDeGravedad,

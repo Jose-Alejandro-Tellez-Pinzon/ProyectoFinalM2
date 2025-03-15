@@ -1,5 +1,7 @@
 package Emergencias;
 
+import utils.Gravedad;
+
 public class Incendio extends Emergencia{
 
     public Incendio(String ubicacion, String tipoEmergencia, Gravedad nivelDeGravedad, int tiempoDeRespuesta) {

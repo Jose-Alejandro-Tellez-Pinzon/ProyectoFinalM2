@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import Emergencias.*;
 import UnidadesDeEmergencia.*;
+import utils.Gravedad;
 
  public class App {
     public static void main(String[] args) {
